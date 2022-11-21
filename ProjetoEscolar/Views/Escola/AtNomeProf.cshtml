@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "AtNomeProf";
+}
+
+<h2>Atualizar Nome do Professor</h2>
+
+@using (Html.BeginForm("AtNomeProf", "Escola", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <br />
+    <h4>Escolha o Aluno que Deseja Atualizar:</h4>
+    @Html.DropDownList("professores", "Escolha o Professor")
+    <br />
+    <br />
+    <br />
+    <h4>Digite o novo nome:</h4>
+    <input type="text" name="txtNomeProf" />
+    <br />
+    <br />
+
+    <br />
+    <input type="submit" value="Atualizar" />
+    <br />
+    <br />
+}
+@ViewBag.atualizar 

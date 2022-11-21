@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "CadAluno";
+}
+
+<h2>Cadastro de Aluno</h2>
+@using (Html.BeginForm("CadAluno", "Escola", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <label>Nome do Aluno</label>
+    <br />
+    <input type="text" id="txtNmAluno" name="txtNmAluno" />
+    <br />
+    <br />
+    <label>Telefone do Aluno</label>
+    <br />
+    <input type="text" id="txtTelefone" name="txtTelefone" />
+    <br />
+    <br />
+
+
+
+
+    <br />
+    <input type="submit" value="Cadastrar" />
+}
